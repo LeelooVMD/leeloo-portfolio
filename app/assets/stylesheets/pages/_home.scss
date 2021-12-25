@@ -16,15 +16,80 @@ body {
     a {
       text-decoration: none;
       color: white;
-      transition: all ease 0.5s;
+      transition: all 0.7s ease-out;
       &:hover {
-        text-decoration: white;
+        text-decoration: underline;
       }
     }
   }
   img {
     margin: 7px;
     border-radius: 50%;
-    box-shadow: 0 20px 22px rgba(0,0,0,0.6);
+    box-shadow: 10px 20px 22px rgba(0,0,0,0.6);
   }
 }
+
+
+// Underline
+
+// $animate: all 0.2s ease-in-out;
+
+// #examples {
+//   display: flex;
+//   flex-flow: column;
+//   max-width: 100%;
+//   width: 960px;
+//   background-color: white;
+//   opacity: 0.95;
+//   padding: 15px 30px;
+//   margin: 0 auto 30px;
+
+//   h1 {
+//     font-size: 48px;
+//     text-align: center;
+//     margin: 30px 15px 60px;
+//   }
+
+  // .example {
+  //   display: flex;
+  //   flex-flow: row nowrap;
+  //   align-items: center;
+  //   margin: 0 0 45px;
+  //   .hover {
+  //     font-size: 36px;
+  //     text-align: center;
+  //     margin: 0 auto;
+  //     padding: 0;
+  //     transition: $animate;
+  //     position: relative;
+  //     &:before,
+  //     &:after {
+  //       content: "";
+  //       position: absolute;
+  //       bottom: -10px;
+  //       width: 0px;
+  //       height: 5px;
+  //       margin: 5px 0 0;
+  //       transition: $animate;
+  //       transition-duration: 0.75s;
+  //       opacity: 0;
+  //       background-color: darken(orange,5%);
+  //     }
+  //     &.hover-1 {
+  //       &:before,
+  //       &:after {
+  //         left: 0;
+  //       }
+  //     }
+  //   }
+  //   &:hover {
+  //     cursor: pointer;
+  //     .hover {
+  //       &:before,
+  //       &:after {
+  //         width: 100%;
+  //         opacity: 1;
+  //       }
+  //     }
+  //   }
+  // }
