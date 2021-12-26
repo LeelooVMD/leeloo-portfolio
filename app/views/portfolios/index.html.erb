@@ -1,8 +1,16 @@
 <div class="container">
-  <% @portfolios.each do |portfolio| %>
-    <div class="portfolio-card">
-      <%= portfolio.name %>
-      <%= portfolio.description %>
-      <% end %>
-    </div>
+  <div class="">
+    <% @portfolios.each do |portfolio| %>
+      <div class="row">
+        <div class="col">
+          <div class="portfolio-card">
+            <%= image_tag portfolio.thumbnail, width: 360, height: 220 %>
+            <h4 class='my-1'><%= portfolio.name %></h4>
+            <p class='my-1'><%= portfolio.description %></p>
+            <p class='my-1'><%= link_to 'Have a look!', portfolio.url %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
