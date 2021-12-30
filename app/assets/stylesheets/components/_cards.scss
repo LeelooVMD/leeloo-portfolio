@@ -1,8 +1,19 @@
 .portfolio-card {
+  font-family: 'Barlow', sans-serif;
   background-color: white;
   border-radius: 8px;
   color: #10065d;
   padding: 10px;
   margin: 10px;
   width: 380px;
+  h4 {
+    font-family: 'Barlow', sans-serif;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  flex-grow: 1;
 }
