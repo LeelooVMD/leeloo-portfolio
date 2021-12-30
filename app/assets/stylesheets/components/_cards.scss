@@ -6,6 +6,7 @@
   padding: 10px;
   margin: 10px;
   width: 380px;
+  box-shadow: 8px 5px 15px rgba(122, 104, 240, 0.6);
   h4 {
     font-family: 'Barlow', sans-serif;
   }
@@ -13,7 +14,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 380px 380px 380px;
   grid-gap: 10px;
   flex-grow: 1;
 }
