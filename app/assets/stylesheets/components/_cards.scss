@@ -14,7 +14,8 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 380px 380px 380px;
-  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  grid-gap: 6px;
   flex-grow: 1;
 }

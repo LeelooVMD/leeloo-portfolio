@@ -1,13 +1,13 @@
 <div class="container">
   <h2>My Recent Work</h2>
-  <div class="d-flex grid">
+  <div class="grid">
     <% @portfolios.each do |portfolio| %>
-          <div class="portfolio-card">
-            <%= image_tag portfolio.thumbnail, width: 360, height: 220 %>
-            <h4 class='my-1'><%= portfolio.name %></h4>
-            <p class='my-1'><%= portfolio.description %></p>
-            <p class='my-1'><%= link_to 'Have a look!', portfolio.url, target: "_blank" %></p>
-          </div>
+      <div class="portfolio-card">
+        <%= image_tag portfolio.thumbnail, width: 360, height: 220 %>
+        <h4 class='my-1'><%= portfolio.name %></h4>
+        <p class='my-1'><%= portfolio.description %></p>
+        <p class='my-1'><%= link_to 'Have a look!', portfolio.url, target: "_blank" %></p>
+      </div>
     <% end %>
   </div>
 </div>
