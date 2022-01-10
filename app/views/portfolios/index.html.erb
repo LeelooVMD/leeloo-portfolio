@@ -4,29 +4,7 @@
       <p><%= link_to 'Home', '/' %></p>
       <p><%= link_to 'CV', '#' %></p>
       <p><%= link_to 'About me', '#', data: { toggle: 'modal', target: '#exampleModal'} %></p>
-
-      <%# ---- Modal Code ---- %>
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">About me</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
-            </div>
-            <div class="modal-body">
-              <h3>Hi, I'm Lilas. Nice to meet you.</h3>
-              <p>I've worked in fashion for 7 years and went through different jobs.
-              <br/>
-              Even if i was really passionate about what I was doing, I felt like i needed to get deeper into tech world.
-              Then I met Le Wagon and i totally fell in love with web programming.
-              <br/>
-              I'm now looking for being a full-stack developer and maybe match it with my background.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <%# -------------------- %>
-
+      <%= render 'pages/modal' %>
       <p><%= link_to 'Contact', '#' %></p>
     </div>
     <h2>My Recent Work</h2>
