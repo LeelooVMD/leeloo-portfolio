@@ -5,17 +5,20 @@
   color: #10065d;
   padding: 10px;
   margin: 10px;
-  width: 380px;
-  box-shadow: 8px 5px 15px rgba(122, 104, 240, 0.6);
+  width: 352px;
+  box-shadow: 5px 5px 15px #4a437999;
   h4 {
     font-family: 'Barlow', sans-serif;
+  }
+  img {
+    border-radius: 5px;
   }
 }
 
 .grid {
   display: grid;
+  justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
   grid-gap: 6px;
   flex-grow: 1;
 }

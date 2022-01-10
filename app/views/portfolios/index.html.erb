@@ -1,12 +1,40 @@
 <div class="container">
-  <h2>My Recent Work</h2>
+  <div class='d-flex justify-content-between align-items-center py-3'>
+    <div>
+      <%= link_to 'Home', '/', class: 'btn-menu' %>
+      <%= link_to 'CV', '#', class: 'btn-menu' %>
+      <%#= link_to 'About me', '#', class: 'btn-menu' %>
+      <button type="button" class="btn-menu" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        About me
+      </button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">About me</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h2>Hi, I'm Lilas. Nice to meet you.</h2>
+        <p>I've worked in fashion for 7 years and went through different jobs.
+            Even if i was really passionate about my job I felt like i needed to get deeper into tech world.
+            Then I met Le Wagon and i totally fell in love with web programming.
+            I'm now looking for being a full-stack developer and maybe match it with my background.</p>
+      </div>
+    </div>
+  </div>
+</div>
+      <%= link_to 'Contact', '#', class: 'btn-menu' %>
+    </div>
+    <h2>My Recent Work</h2>
+  </div>
   <div class="grid">
     <% @portfolios.each do |portfolio| %>
       <div class="portfolio-card">
-        <%= image_tag portfolio.thumbnail, width: 360, height: 220 %>
-        <h4 class='my-1'><%= portfolio.name %></h4>
+        <%= image_tag portfolio.thumbnail, width: 333, height: 190 %>
+        <h4 class='my-2'><%= portfolio.name %></h4>
         <p class='my-1'><%= portfolio.description %></p>
-        <p class='my-1'><%= link_to 'Have a look!', portfolio.url, target: "_blank" %></p>
+        <p class='mt-4'><%= link_to 'Have a look!', portfolio.url, target: "_blank", class: 'buttons' %></p>
       </div>
     <% end %>
   </div>

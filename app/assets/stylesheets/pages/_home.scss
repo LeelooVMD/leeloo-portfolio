@@ -2,18 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;700&family=Hind:wght@300;400;500;600&family=Open+Sans:wght@300;400;500&family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap');
 
 body {
-  background-color: #10065d;
-}
-
-.container {
-  align-items: center;
-  h2 {
-    font-family: 'Barlow', sans-serif;
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
+  background-color: #818ce2;
 }
 
 .categories {
@@ -44,7 +33,7 @@ body {
       height: 2px;
       bottom: 0;
       left: 0;
-      background-color: #000;
+      background-color: rgb(255, 255, 255);
       transform: scaleX(0);
       transform-origin: top left;
       transition: transform 0.3s ease;
@@ -53,6 +42,6 @@ body {
   img {
     margin: 7px;
     border-radius: 50%;
-    box-shadow: 10px 20px 22px rgba(0,0,0,0.6);
+    box-shadow: 8px 14px 22px #514f4fbd;
   }
 }
