@@ -7,6 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 puts 'Destroy portfolio'
 Portfolio.destroy_all
+puts 'Destroy contacts'
+Contact.destroy_all
 
 puts 'Adding portfolio'
 Portfolio.create(name: 'Perfect Watch', company: 'Nicolas, Sixtine, Brice & myself', description: 'Website developped with Le Wagon school, concept was to help users to find a movie in 5 minutes depending on their platforms', url: 'https://www.perfect-watch.net/', thumbnail: 'PerfectWatch.png')
