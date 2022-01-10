@@ -9,12 +9,13 @@
     </div>
     <h2>How would you like to contact me?</h2>
   </div>
-  <div class="grid">
+  <div class="grid text-center">
     <% @contacts.each do |contact| %>
-      <div class="contact-card">
-        <h4 class='my-2'><%= contact.name %></h4>
-        <p class='mt-4'><%= link_to 'Contact me', contact.url, target: "_blank", class: 'buttons' %></p>
-      </div>
+      <%= link_to contact.url, target: "_blank" do %>
+        <div class="contact-card">
+          <h4 class='my-2'><%= contact.name %></h4>
+        </div>
+      <% end %>
     <% end %>
   </div>
 </div>

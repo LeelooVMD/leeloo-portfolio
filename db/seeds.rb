@@ -16,7 +16,7 @@ Portfolio.create(name: 'Sitter on the way', company: 'Nicolas, Sixtine, Brice & 
 puts 'Portfolio added'
 
 puts 'Adding contacts'
-Contact.create(name: 'Instagram', url: 'https://www.instagram.com/lilasvmd/')
-Contact.create(name: 'Linkedin', url: 'https://www.linkedin.com/in/lilasmarchand/')
-Contact.create(name: 'GitHub', url: 'https://github.com/LeelooVMD')
+Contact.create(name: 'Instagram', url: 'https://www.instagram.com/lilasvmd/', background: 'Instagram.jpeg')
+Contact.create(name: 'Linkedin', url: 'https://www.linkedin.com/in/lilasmarchand/', background: 'Linkedin.jpeg')
+Contact.create(name: 'GitHub', url: 'https://github.com/LeelooVMD', background: 'Github.jpeg')
 puts 'Contacts created'
