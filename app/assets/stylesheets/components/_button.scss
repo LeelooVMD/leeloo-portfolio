@@ -30,3 +30,35 @@
     text-decoration: none;
   }
 }
+
+.svg-wrapper {
+  position: relative;
+  top: 80%;
+  transform: translateY(-50%);
+	margin: 0 auto;
+  width: 343px;
+  height: 81px;
+  text-align: center;
+}
+.shape {
+  stroke-dasharray: 100 540;
+  stroke-dashoffset: -492;
+  stroke-width: 5px;
+  fill: transparent;
+  stroke: #ffffff;
+  border-bottom: 3px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  color: #fff;
+  top: -48px;
+  position: relative;
+}
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}

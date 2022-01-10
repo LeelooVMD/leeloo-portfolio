@@ -4,6 +4,9 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 6px;
   flex-grow: 1;
+  a {
+    text-decoration: none;
+  }
 }
 
 .portfolio-card {
@@ -30,7 +33,8 @@
   color: white;
   padding: 10px;
   margin: 10px;
-  a {
-    text-decoration: none;
+  transition: all 1s ease;
+  .text {
+    font-family: 'Barlow', sans-serif;
   }
 }
