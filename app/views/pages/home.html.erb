@@ -6,7 +6,7 @@
     </div>
     <%= image_tag 'PDP.jpg', height: 300, width: 290 %>
     <div class='d-flex flex-column'>
-      <p><%= link_to 'Contact' %></p>
+      <p><%= link_to 'Contact', contacts_path %></p>
       <p><%= link_to 'About me', '#', data: { toggle: 'modal', target: '#exampleModal'} %></p>
       <%= render 'pages/modal' %>
     </div>

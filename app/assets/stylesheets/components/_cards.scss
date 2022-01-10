@@ -1,3 +1,11 @@
+.grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 6px;
+  flex-grow: 1;
+}
+
 .portfolio-card {
   font-family: 'Barlow', sans-serif;
   background-color: white;
@@ -15,10 +23,11 @@
   }
 }
 
-.grid {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 6px;
-  flex-grow: 1;
+.contact-card {
+  font-family: 'Barlow', sans-serif;
+  background-color: white;
+  border-radius: 8px;
+  color: #10065d;
+  padding: 10px;
+  margin: 10px;
 }

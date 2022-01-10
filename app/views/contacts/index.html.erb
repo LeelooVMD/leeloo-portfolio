@@ -1,4 +1,20 @@
 <div class="container">
-  <h2>How would you like to contact me?</h2>
-
+  <div class='d-flex justify-content-between align-items-center py-3'>
+    <div class= 'categories index'>
+      <p><%= link_to 'Home', '/' %></p>
+      <p><%= link_to "Download CV", download_pdf_url %></p>
+      <p><%= link_to 'Portfolio', portfolios_path %></p>
+      <p><%= link_to 'About me', '#', data: { toggle: 'modal', target: '#exampleModal'} %></p>
+      <%= render 'pages/modal' %>
+    </div>
+    <h2>How would you like to contact me?</h2>
+  </div>
+  <div class="grid">
+    <% @contacts.each do |contact| %>
+      <div class="contact-card">
+        <h4 class='my-2'><%= contact.name %></h4>
+        <p class='mt-4'><%= link_to 'Contact me', contact.url, target: "_blank", class: 'buttons' %></p>
+      </div>
+    <% end %>
+  </div>
 </div>
