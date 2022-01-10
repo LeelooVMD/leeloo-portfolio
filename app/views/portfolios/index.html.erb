@@ -1,30 +1,33 @@
 <div class="container">
   <div class='d-flex justify-content-between align-items-center py-3'>
-    <div>
-      <%= link_to 'Home', '/', class: 'btn-menu' %>
-      <%= link_to 'CV', '#', class: 'btn-menu' %>
-      <%#= link_to 'About me', '#', class: 'btn-menu' %>
-      <button type="button" class="btn-menu" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        About me
-      </button>
+    <div class= 'categories index'>
+      <p><%= link_to 'Home', '/' %></p>
+      <p><%= link_to 'CV', '#' %></p>
+      <p><%= link_to 'About me', '#', data: { toggle: 'modal', target: '#exampleModal'} %></p>
+
+      <%# ---- Modal Code ---- %>
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">About me</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">About me</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+              <h3>Hi, I'm Lilas. Nice to meet you.</h3>
+              <p>I've worked in fashion for 7 years and went through different jobs.
+              <br/>
+              Even if i was really passionate about what I was doing, I felt like i needed to get deeper into tech world.
+              Then I met Le Wagon and i totally fell in love with web programming.
+              <br/>
+              I'm now looking for being a full-stack developer and maybe match it with my background.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        <h2>Hi, I'm Lilas. Nice to meet you.</h2>
-        <p>I've worked in fashion for 7 years and went through different jobs.
-            Even if i was really passionate about my job I felt like i needed to get deeper into tech world.
-            Then I met Le Wagon and i totally fell in love with web programming.
-            I'm now looking for being a full-stack developer and maybe match it with my background.</p>
-      </div>
-    </div>
-  </div>
-</div>
-      <%= link_to 'Contact', '#', class: 'btn-menu' %>
+      <%# -------------------- %>
+
+      <p><%= link_to 'Contact', '#' %></p>
     </div>
     <h2>My Recent Work</h2>
   </div>

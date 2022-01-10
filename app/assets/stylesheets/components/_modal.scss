@@ -1,0 +1,15 @@
+.modal-content {
+  border-radius: 8px;
+  color: #10065d;
+  box-shadow: 5px 5px 15px #4a437999;
+  background-color: white;
+  .modal-body {
+    font-family: 'Barlow', sans-serif;
+    h3 {
+      font-family: inherit;
+    }
+    p {
+      margin: 0px;
+    }
+  }
+}
