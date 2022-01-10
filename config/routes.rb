@@ -2,5 +2,6 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get 'download_pdf', to: "pages#download_pdf"
   resources :portfolios, only: [:index, :show]
+  resources :contacts, only: [:index, :show]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

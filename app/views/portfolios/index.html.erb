@@ -2,7 +2,7 @@
   <div class='d-flex justify-content-between align-items-center py-3'>
     <div class= 'categories index'>
       <p><%= link_to 'Home', '/' %></p>
-      <p><%= link_to 'CV', '#' %></p>
+      <p><%= link_to "Download CV", download_pdf_url %></p>
       <p><%= link_to 'About me', '#', data: { toggle: 'modal', target: '#exampleModal'} %></p>
       <%= render 'pages/modal' %>
       <p><%= link_to 'Contact', '#' %></p>
