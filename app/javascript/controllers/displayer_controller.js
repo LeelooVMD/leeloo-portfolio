@@ -9,7 +9,7 @@ export default class extends Controller {
     // this.contentTargets.classList.remove('d-none')
     links.forEach((link) => {
       link.classList.add('load')
-      link.classList.remove('d-none')
+      link.classList.toggle('d-none')
     })
   // your logic (controller actions)
   };
