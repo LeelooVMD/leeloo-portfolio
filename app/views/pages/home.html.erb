@@ -1,13 +1,13 @@
 <div class="container d-flex justify-content-center" style="height: 100vh;">
   <div class='categories' data-controller='displayer'>
     <div class='d-flex flex-column'>
-      <p class='d-none' data-displayer-target='content'><%= link_to 'Portfolio', portfolios_path %></p>
-      <p class='d-none' data-displayer-target='content'><%= link_to 'Download CV', download_pdf_url %></p>
+      <p class='d-none vignets' data-displayer-target='content'><%= link_to 'Portfolio', portfolios_path %></p>
+      <p class='d-none vignets' data-displayer-target='content'><%= link_to 'Download CV', download_pdf_url %></p>
     </div>
     <%= image_tag 'PDP.jpg', height: 300, width: 290, data: { action: 'click->displayer#tabs' } %>
     <div class='d-flex flex-column'>
-      <p class='d-none' data-displayer-target='content'><%= link_to 'Contact', contacts_path %></p>
-      <p class='d-none' data-displayer-target='content'><%= link_to 'About me', '#', data: { toggle: 'modal', target: '#exampleModal'} %></p>
+      <p class='d-none vignets' data-displayer-target='content'><%= link_to 'Contact', contacts_path %></p>
+      <p class='d-none vignets' data-displayer-target='content'><%= link_to 'About me', '#', data: { toggle: 'modal', target: '#exampleModal'} %></p>
       <%= render 'pages/modal' %>
     </div>
   </div>
