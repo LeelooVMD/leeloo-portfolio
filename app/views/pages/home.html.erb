@@ -1,19 +1,21 @@
-<div class="container d-flex justify-content-center flex-column" style="height: 100vh;">
-  <div class="title text-center" data-controller='displayclick'>
+<div class="container d-flex justify-content-center flex-column" style="height: 100vh;" data-controller='navigate-click-shake'>
+  <div class="title text-center">
     <h2>Welcome on Lilas Marchand's portfolio</h2>
-    <p class='hint' data-displayclick-target='click'>Click to navigate <i class="fas fa-arrow-down"></i></p>
+    <div class='hint'>
+      <p class='vignets d-none' data-navigate-click-shake-target='navigate'>Click to navigate <i class="fas fa-arrow-down"></i></p>
+    </div>
   </div>
-  <div class='categories' data-controller='displayer'>
+  <div class='categories'>
     <div class='d-flex flex-column'>
-      <p class='d-none vignets' data-displayer-target='content'><%= link_to 'Portfolio', portfolios_path %></p>
-      <p class='d-none vignets' data-displayer-target='content'><%= link_to 'CV PDF', download_pdf_url %></p>
+      <p class='d-none vignets' data-navigate-click-shake-target='content'><%= link_to 'Portfolio', portfolios_path %></p>
+      <p class='d-none vignets' data-navigate-click-shake-target='content'><%= link_to 'CV PDF', download_pdf_url %></p>
     </div>
-    <div  data-controller='shaker' data-action='click->displayer#tabs'>
-      <%= image_tag 'PDP.jpg', height: 300, width: 290, data: { shaker_target: 'pic'} %>
+    <div  class='picture-size' data-action='click->navigate-click-shake#tabs'>
+      <%= image_tag 'PDP.jpg', height: 300, width: 290, data: { navigate_click_shake_target: 'pic'} %>
     </div>
     <div class='d-flex flex-column'>
-      <p class='d-none vignets' data-displayer-target='content'><%= link_to 'Contact', contacts_path %></p>
-      <p class='d-none vignets' data-displayer-target='content'><%= link_to 'About me', '#', data: { toggle: 'modal', target: '#exampleModal'} %></p>
+      <p class='d-none vignets' data-navigate-click-shake-target='content'><%= link_to 'Contact', contacts_path %></p>
+      <p class='d-none vignets' data-navigate-click-shake-target='content'><%= link_to 'About me', '#', data: { toggle: 'modal', target: '#exampleModal'} %></p>
       <%= render 'pages/modal' %>
     </div>
   </div>
