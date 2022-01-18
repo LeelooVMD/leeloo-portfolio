@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 puts 'Destroy portfolio'
 Portfolio.destroy_all
-puts 'Destroy contacts'
-Contact.destroy_all
+puts 'Destroy Connections'
+Connection.destroy_all
 
 puts 'Adding portfolio'
 Portfolio.create(name: 'Perfect Watch', company: 'Nicolas, Sixtine, Brice & myself', description: 'Website developped with Le Wagon school, concept was to help users to find a movie in 5 minutes depending on their platforms', url: 'https://www.perfect-watch.net/', thumbnail: 'PerfectWatch.png')
@@ -17,8 +17,8 @@ Portfolio.create(name: 'Sitter on the way', company: 'Nicolas, Sixtine, Brice & 
 # Portfolio.create(name: 'Les Ateliers Leccia', company: 'Les Ateliers Leccia', description: 'A school that propose differents type of services, such as painting and sewing.', url: 'https://lesateliersleccia.com/', thumbnail: 'none.jpeg')
 puts 'Portfolio added'
 
-puts 'Adding contacts'
-Contact.create(name: 'Instagram', url: 'https://www.instagram.com/lilasvmd/', background: 'Instagram.jpeg')
-Contact.create(name: 'Linkedin', url: 'https://www.linkedin.com/in/lilasmarchand/', background: 'Linkedin.jpeg')
-Contact.create(name: 'GitHub', url: 'https://github.com/LeelooVMD', background: 'Github.jpeg')
-puts 'Contacts created'
+puts 'Adding Connections'
+Connection.create(name: 'Instagram', url: 'https://www.instagram.com/lilasvmd/', background: 'Instagram.jpeg')
+Connection.create(name: 'Linkedin', url: 'https://www.linkedin.com/in/lilasmarchand/', background: 'Linkedin.jpeg')
+Connection.create(name: 'GitHub', url: 'https://github.com/LeelooVMD', background: 'Github.jpeg')
+puts 'Connections created'
