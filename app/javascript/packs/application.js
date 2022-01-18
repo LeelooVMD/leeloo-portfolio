@@ -33,3 +33,5 @@ document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
 });
+window.$ = window.jQuery = require("jquery");
+import "bootstrap/dist/js/bootstrap.bundle.js"
