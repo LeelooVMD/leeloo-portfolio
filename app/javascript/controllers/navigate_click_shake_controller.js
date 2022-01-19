@@ -2,7 +2,7 @@ import { Controller } from "stimulus"
 
 export default class extends Controller {
   static targets = ['pic', 'content', 'navigate']
-  static value = {
+  static values = {
     help: Boolean
   }
 
