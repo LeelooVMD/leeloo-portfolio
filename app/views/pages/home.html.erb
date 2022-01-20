@@ -10,7 +10,7 @@
       <p class='d-none vignets' data-navigate-click-shake-target='content'><%= link_to 'Portfolio', portfolios_path %></p>
       <p class='d-none vignets' data-navigate-click-shake-target='content'><%= link_to 'CV PDF', download_pdf_url %></p>
     </div>
-    <div data-action='click->navigate-click-shake#tabs'>
+    <div class='d-flex flex-column text-center' data-action='click->navigate-click-shake#tabs'>
       <%= image_tag 'PDP.jpg', height: 300, width: 290, data: { navigate_click_shake_target: 'pic'} %>
     </div>
     <div class='picture-size' class='d-flex flex-column'>
@@ -19,4 +19,5 @@
       <%= render 'pages/modal' %>
     </div>
   </div>
+  <p id='name' class='mt-4 text-center'>Lilas Marchand</p>
 </div>

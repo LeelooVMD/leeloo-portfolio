@@ -5,11 +5,20 @@ body {
   background-color: #818ce2;
 }
 
+p#name {
+        font-family: 'Barlow', sans-serif;
+        font-size: 22px;
+        color: white;
+        font-weight: 500;
+        margin-top: 10px;
+  }
+
 .categories {
   display: flex;
   align-items: center;
   justify-content: center;
   p {
+    color: white !important;
     font-family: 'Barlow', sans-serif;
     font-size: 25px;
     margin: 7px;
@@ -44,6 +53,7 @@ body {
     border-radius: 50%;
     box-shadow: 8px 14px 22px #514f4fbd;
   }
+
 
   &.index {
     p {
