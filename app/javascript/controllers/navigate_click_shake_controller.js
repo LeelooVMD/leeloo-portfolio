@@ -13,6 +13,7 @@ export default class extends Controller {
       link.classList.add('load')
       link.classList.toggle('d-none')
     })
+    this.navigateTarget.classList.add('d-none');
   };
 
   shake() {
