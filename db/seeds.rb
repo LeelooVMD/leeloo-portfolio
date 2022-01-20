@@ -18,7 +18,7 @@ Portfolio.create(name: 'Sitter on the way', company: 'Nicolas, Sixtine, Brice & 
 puts 'Portfolio added'
 
 puts 'Adding Connections'
-Connection.create(name: 'Instagram', url: 'https://www.instagram.com/lilasvmd/', background: 'Instagram.jpeg')
-Connection.create(name: 'Linkedin', url: 'https://www.linkedin.com/in/lilasmarchand/', background: 'Linkedin.jpeg')
-Connection.create(name: 'GitHub', url: 'https://github.com/LeelooVMD', background: 'Github.jpeg')
+Connection.create(name: 'Instagram', url: 'https://www.instagram.com/lilasvmd/', background: 'Instagram.jpg')
+Connection.create(name: 'Linkedin', url: 'https://www.linkedin.com/in/lilasmarchand/', background: 'Linkedin.jpg')
+Connection.create(name: 'GitHub', url: 'https://github.com/LeelooVMD', background: 'Github.jpg')
 puts 'Connections created'
