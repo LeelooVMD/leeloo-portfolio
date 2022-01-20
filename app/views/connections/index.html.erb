@@ -21,12 +21,12 @@
         <% end %>
     <% end %>
   </div>
-  <div class='mt-5'>
-    <h1>Contact Form</h1>
+  <div class='form mt-5 d-flex flex-column text-center'>
+    <h3 class='pb-4'>Send me a direct message</h3>
     <%= form_for([@contact]) do |f| %>
-      <div class="col-md-6">
+      <div class="col-md-12 text-center">
         <%= f.label :name %></br>
-        <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
+        <%= f.text_field  :name, required: true, class: "" %></br>
 
         <%= f.label :email %></br>
         <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
@@ -40,7 +40,7 @@
           <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
         </div>
 
-        <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+        <%= f.submit 'Send Message', class: 'btn-menu' %>
       </div>
     <% end %>
   </div>
