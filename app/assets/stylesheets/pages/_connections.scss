@@ -1,7 +1,7 @@
-.container.form {
+.container .form {
   #title-send {
     font-family: 'Barlow', sans-serif;
-    font-weight: lighter;
+    font-weight: 400;
     color: white;
     margin: 0px;
   }
@@ -9,7 +9,19 @@
 
 .holders {
   label {
-    color: white !important;
+    color: white;
     font-family: 'Barlow', sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+  input{
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 12px;
+  }
+  textarea {
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 8px;
   }
 }
