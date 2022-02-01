@@ -51,3 +51,20 @@
     font-family: 'Barlow', sans-serif;
   }
 }
+
+.contact-form {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px #4a437999;
+  text-align: center;
+  color: #10065d;
+  padding: 35px;
+  h1, p {
+    margin-bottom: 30px;
+    font-family: 'Barlow', sans-serif;
+  }
+
+  .buttons {
+    margin: 10px;
+  }
+}
