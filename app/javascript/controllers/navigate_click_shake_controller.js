@@ -25,6 +25,6 @@ export default class extends Controller {
   };
 
   connect() {
-      setTimeout(() => this.shake(), 2500);
+      setTimeout(() => this.shake(), 3000);
   };
 }

@@ -8,6 +8,10 @@
 }
 
 .holders {
+
+  #contact_name, #contact_email {
+    height: 30px;
+  }
   label {
     color: white;
     font-family: 'Barlow', sans-serif;
@@ -20,9 +24,6 @@
     border: none;
     margin-bottom: 12px;
     width: inherit;
-    #contact_name#contact_email {
-      height: 30px;
-    }
   }
   textarea {
     border-radius: 8px;
