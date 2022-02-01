@@ -16,14 +16,13 @@
       <%= form_for([@contact]) do |f| %>
         <div class="holders col-md-12 text-left pl-0">
           <%= f.label :name %></br>
-          <%= f.text_field  :name, required: true, class: "" %></br>
+          <%= f.text_field  :name, required: true, class: "", placeholder: "Lola" %></br>
 
           <%= f.label :email %></br>
-          <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
+          <%= f.text_field :email, required: true, class: "contact-form-text-area", placeholder: "lola@gmail.com" %></br>
 
           <%= f.label :message %></br>
-          <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
-                placeholder: "Send me a message"%></br>
+          <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area", placeholder: "This message is to tell you..." %></br>
 
           <div class= "d-none">
             <%= f.label :nickname %>

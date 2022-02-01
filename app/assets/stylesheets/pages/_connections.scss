@@ -10,7 +10,8 @@
 .holders {
 
   #contact_name, #contact_email {
-    height: 30px;
+    height: 35px;
+    padding: 8px;
   }
   label {
     color: white;
@@ -26,6 +27,7 @@
     width: inherit;
   }
   textarea {
+    padding: 8px;
     border-radius: 8px;
     border: none;
     margin-bottom: 8px;
