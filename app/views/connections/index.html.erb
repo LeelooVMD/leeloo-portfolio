@@ -1,47 +1,50 @@
 <div class="container">
   <div class='d-flex justify-content-between align-items-center py-3'>
+    <h2>How would you like to contact me?</h2>
     <div class= 'categories index'>
       <p><%= link_to 'Home', '/' %></p>
-      <p><%= link_to "Download CV", download_pdf_url %></p>
       <p><%= link_to 'Portfolio', portfolios_path %></p>
+      <p><%= link_to "Download CV", download_pdf_url %></p>
       <p><%= link_to 'About me', '#', data: { toggle: 'modal', target: '#exampleModal'} %></p>
       <%= render 'pages/modal' %>
+      <p><%= link_to 'Contact', connections_path %></p>
     </div>
-    <h2>How would you like to contact me?</h2>
   </div>
-  <div class="grid text-center">
-    <% @connections.each do |connection| %>
-        <%= link_to connection.url, target: "_blank" do %>
-          <div class="contact-card svg-wrapper" style="background-image: url('<%= asset_path connection.background %>')">
-          <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-          <rect class="shape" height="60" width="320"/>
-          <div class="text"><%= connection.name %></div>
-          </svg>
+  <div class="d-flex justify-content-between">
+    <div class='form mt-5 d-flex flex-column'>
+      <h3 id='title-send' class='py-3'>Send me a direct message!</h3>
+      <%= form_for([@contact]) do |f| %>
+        <div class="holders col-md-12 text-left pl-0">
+          <%= f.label :name %></br>
+          <%= f.text_field  :name, required: true, class: "" %></br>
+
+          <%= f.label :email %></br>
+          <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
+
+          <%= f.label :message %></br>
+          <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
+                placeholder: "Send me a message"%></br>
+
+          <div class= "d-none">
+            <%= f.label :nickname %>
+            <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
           </div>
-        <% end %>
-    <% end %>
-  </div>
-  <div class='form mt-5 d-flex flex-column text-center'>
-    <h3 id='title-send' class='py-3'>Send me a direct message!</h3>
-    <%= form_for([@contact]) do |f| %>
-      <div class="holders col-md-12 text-center">
-        <%= f.label :name %></br>
-        <%= f.text_field  :name, required: true, class: "" %></br>
 
-        <%= f.label :email %></br>
-        <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
-
-        <%= f.label :message %></br>
-        <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
-              placeholder: "Send me a message"%></br>
-
-        <div class= "d-none">
-          <%= f.label :nickname %>
-          <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+          <%= f.submit 'Send Message', class: 'btn-menu' %>
         </div>
-
-        <%= f.submit 'Send Message', class: 'btn-menu' %>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
+    <div class="grid text-center">
+      <% @connections.each do |connection| %>
+          <%= link_to connection.url, target: "_blank" do %>
+            <div class="contact-card svg-wrapper" style="background-image: url('<%= asset_path connection.background %>')">
+            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+            <rect class="shape" height="60" width="320"/>
+            <div class="text"><%= connection.name %></div>
+            </svg>
+            </div>
+          <% end %>
+      <% end %>
+    </div>
   </div>
 </div>

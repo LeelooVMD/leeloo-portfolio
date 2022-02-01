@@ -1,9 +1,7 @@
 <div class="container d-flex justify-content-center flex-column" style="height: 100vh;" data-controller='navigate-click-shake' data-navigate-click-shake-help-value='true'>
   <div class="title text-center">
     <h2>Welcome on my portfolio</h2>
-    <div class='hint'>
-      <p class='vignets d-none' data-navigate-click-shake-target='navigate'>Click to navigate <i class="fas fa-arrow-down"></i></p>
-    </div>
+    <p id='name' class='text-center'>Lilas Marchand</p>
   </div>
   <div class='categories'>
     <div class='d-flex flex-column picture-size text-right'>
@@ -19,5 +17,7 @@
       <%= render 'pages/modal' %>
     </div>
   </div>
-  <p id='name' class='mt-4 text-center'>Lilas Marchand</p>
+  <div class='hint text-center mt-2'>
+    <p class='vignets d-none pr-1' data-navigate-click-shake-target='navigate'>Click to navigate <i class="fas fa-arrow-up"></i></p>
+  </div>
 </div>

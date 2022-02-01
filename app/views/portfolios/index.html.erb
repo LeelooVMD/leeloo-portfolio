@@ -1,13 +1,14 @@
 <div class="container">
   <div class='d-flex justify-content-between align-items-center py-3'>
+    <h2>My Recent Work</h2>
     <div class= 'categories index'>
       <p><%= link_to 'Home', '/' %></p>
+      <p><%= link_to 'Portfolio', portfolios_path %></p>
       <p><%= link_to "Download CV", download_pdf_url %></p>
       <p><%= link_to 'About me', '#', data: { toggle: 'modal', target: '#exampleModal'} %></p>
       <%= render 'pages/modal' %>
       <p><%= link_to 'Contact', connections_path %></p>
     </div>
-    <h2>My Recent Work</h2>
   </div>
   <div class="grid">
     <% @portfolios.each do |portfolio| %>
