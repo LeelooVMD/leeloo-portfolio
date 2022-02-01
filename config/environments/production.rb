@@ -5,7 +5,7 @@ Rails.application.configure do
     :address        => ENV['MAILGUN_SMTP_SERVER'],
     :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
     :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-    :domain         => 'lilas-marchand-portfolio.herokuapp.com', # UPDATE THIS VALUE WITH YOUR OWN APP
+    :domain         => 'lilas-marchand.com', # UPDATE THIS VALUE WITH YOUR OWN APP
     :authentication => :plain,
   }
   ActionMailer::Base.delivery_method = :smtp
