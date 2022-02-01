@@ -21,4 +21,5 @@ puts 'Adding Connections'
 Connection.create(name: 'Instagram', url: 'https://www.instagram.com/lilasvmd/', background: 'Instagram.jpg')
 Connection.create(name: 'Linkedin', url: 'https://www.linkedin.com/in/lilasmarchand/', background: 'Linkedin.jpg')
 Connection.create(name: 'GitHub', url: 'https://github.com/LeelooVMD', background: 'Github.jpg')
+Connection.create(name: 'Malt', url: 'https://www.malt.fr/profile/lilasmarchand', background: 'Malt.jpg')
 puts 'Connections created'
