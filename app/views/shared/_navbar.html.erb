@@ -1,0 +1,31 @@
+      <nav class="navbar navbar-expand-sm bg-secondary background navbar-dark">
+         <!-- Toggler/collapsibe Button -->
+         <button class="navbar-toggler background" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <!-- Navbar links -->
+         <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                <p><%= link_to 'Home', '/' %></p>
+               </li>
+               <li class="nav-item">
+                <p><%= link_to 'Portfolio', portfolios_path %></p>
+               </li>
+               <li class="nav-item">
+                <p><%= link_to "Download CV", download_pdf_url %></p>
+               </li>
+               <li class="nav-item">
+                <p><%= link_to 'About me', '#', data: { toggle: 'modal', target: '#exampleModal'} %></p>
+                <%= render 'pages/modal' %>
+               </li>
+               <li class="nav-item">
+                <p><%= link_to 'Contact', connections_path %></p>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

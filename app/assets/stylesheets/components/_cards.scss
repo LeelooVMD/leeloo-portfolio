@@ -68,3 +68,10 @@
     margin: 10px;
   }
 }
+
+@media(max-width: 768px) {
+  .grid-portfolio {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

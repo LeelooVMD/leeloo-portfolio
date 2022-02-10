@@ -144,3 +144,15 @@ body {
 .picture-size {
   width: 150px;
 }
+
+
+@media(max-width: 768px) {
+  .categories {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .responsive-text {
+      text-align: center !important;
+    }
+  }
+}

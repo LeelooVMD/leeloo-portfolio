@@ -2,36 +2,10 @@
   <div class='d-flex justify-content-between align-items-center py-3'>
     <h2>How would you like to contact me?</h2>
     <div class= 'categories index'>
-      <%# <div class="navbar navbar-expand-sm navbar-light navbar-lewagon"> %>
-        <div class="container-fluid">
-          <div class="" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto">
-              <li>
-                <p><%= link_to 'Home', '/' %></p>
-              </li>
-              <li>
-                <p><%= link_to 'Portfolio', portfolios_path %></p>
-              </li>
-              <li>
-                <p><%= link_to "Download CV", download_pdf_url %></p>
-              </li>
-              <li>
-                <p><%= link_to 'About me', '#', data: { toggle: 'modal', target: '#exampleModal'} %></p>
-              </li>
-              <%= render 'pages/modal' %>
-              <p><%= link_to 'Contact', connections_path %></p>
-            </ul>
-          </div>
-          <nav class="navbar navbar-light bg-dark">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          </nav>
-        </div>
-      <%# </div> %>
+      <%= render 'shared/navbar' %>
     </div>
   </div>
-  <div class="d-flex justify-content-between">
+  <div class="flexclass">
     <div class='form mt-5 d-flex flex-column'>
       <h3 id='title-send' class='py-3'>Send me a direct message!</h3>
       <%= form_for([@contact]) do |f| %>

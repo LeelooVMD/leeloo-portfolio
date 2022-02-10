@@ -31,6 +31,30 @@
     border-radius: 8px;
     border: none;
     margin-bottom: 8px;
-    width: 465px;;
+    width: 465px;
+  }
+}
+
+.flexclass {
+  display: flex;
+  justify-content: space-between;
+}
+
+// @media(max-width: 992px) {
+//   .flaxclass {
+
+//   }
+// }
+
+@media(max-width: 768px) {
+  .flexclass {
+    display: flex;
+    flex-direction: column;
+    .holders textarea {
+      width: 369px;
+    }
+    .grid {
+      justify-items: center;
+    }
   }
 }
