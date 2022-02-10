@@ -8,7 +8,6 @@
 }
 
 .holders {
-
   #contact_name, #contact_email {
     height: 35px;
     padding: 8px;
@@ -39,12 +38,6 @@
   display: flex;
   justify-content: space-between;
 }
-
-// @media(max-width: 992px) {
-//   .flaxclass {
-
-//   }
-// }
 
 @media(max-width: 768px) {
   .flexclass {

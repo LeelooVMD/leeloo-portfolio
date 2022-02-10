@@ -30,17 +30,15 @@
     </div>
     <div class="grid text-center">
       <% @connections.each do |connection| %>
-          <%= link_to connection.url, target: "_blank" do %>
-            <div class="contact-card svg-wrapper" style="background-image: url('<%= asset_path connection.background %>')">
+          <div class="contact-card svg-wrapper" style="background-image: url('<%= asset_path connection.background %>')">
+            <%= link_to connection.url, target: "_blank" do %>
             <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
             <rect class="shape" height="60" width="320"/>
             <div class="text"><%= connection.name %></div>
+          </div>
             </svg>
-            </div>
           <% end %>
       <% end %>
-    </div>
-    <div>
     </div>
   </div>
 </div>
