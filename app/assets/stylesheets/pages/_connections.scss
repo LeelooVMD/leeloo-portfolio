@@ -50,8 +50,9 @@
   .flexclass {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     .holders textarea {
-      width: 369px;
+      width: inherit;
     }
     .grid {
       justify-items: center;
